@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<head>
+    <title>Pursuit Panic!</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="startGame">
+        <div class="main">
+            <div class="container">
+                <img class="logo" src="assets/logo.png" />
+                <h1 class="title">PURSUIT PANIC!</h1>
+                <form>
+                    <p class="pseudo">Pseudo</p>
+                    <label for="pseudo"></label><input type="text" id="pseudo" name="pseudo" class="input-pseudo"
+                        placeholder="Guest" required>
+                    <button type="submit" id="start-game" class="play-btn" onclick="startGame()">Jouer</button>
+                </form>
+
+                <br>
+                <button class="input-pseudo" class="rules-btn" onclick="showRules()">Règles</button>
+
+                <div id="rule" class="rule">
+                    <div class="rule-content">
+                        <span class="close" onclick="closeRule()">&times;</span>
+                        <h2>Comment jouer ?</h2>
+                        <p>L'objectif est de <span>traverser</span> la route. <br>
+                            Votre personnage ne pourra avancer qu'en <span>ligne droite</span>.</p>
+                        <p>Cependant, il y aura des voitures en tant qu'<span>obstacles</span> et un policier qui vous
+                            poursuit. <br>
+                            Il faudra <span>esquiver</span> les voitures sans se faire attraper par le policier.</p>
+                        <p>Si vous vous cognez à une voiture, la partie s'arrête. <br>
+                            Ensuite, votre <span>score</span> sera affiché avec un <span>classement</span> des 5
+                            meilleurs joueurs.
+                            <br>
+                            Vous pourrez ensuite <span>rejouer</span> une partie.
+                        </p>
+                        <p class="now">A vous de jouer maintenant !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&display=swap");
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(270deg, #134272 0%, #17528d 100%)
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.input-pseudo {
+    background-color: #0D2B4A;
+    padding: 1rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.container.game-over {
+    background: linear-gradient(270deg, #134272 0%, #17528d 100%);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 550px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.logo.game-over {
+    margin-top: -50px;
+}
+
+.best {
+    color: #ffffff;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    word-spacing: 50px;
+    margin-top: 20px;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.pseudo {
+    color: #ffffff;
+}
+
+.play-btn {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: #086db8;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px #0D2B4A;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.rules-btn {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: #086db8;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px #0D2B4A;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+.title.game-over {
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+button {
+    transition-duration: 0.4s;
+}
+
+
+
+.rule {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-weight: bold;
+    color: #086db8;
+}
+
+.rule-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    opacity: 1;
+    color: black;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+    color: #086db8;
+}
+
+.now {
+    font-weight: bold;
+    color: #086db8;
+
+}
